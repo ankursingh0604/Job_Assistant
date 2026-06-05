@@ -1,0 +1,17 @@
+langchain
+langchain-openai
+langchain-groq
+langchain-huggingface
+langchain-community
+langchain-core
+langgraph
+pypdf
+python-dotenv
+fastapi
+uvicorn
+streamlit
+pydantic
+sqlalchemy
+tavily-python
+langsmith
+python-multipart
