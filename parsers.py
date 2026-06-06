@@ -8,7 +8,7 @@ from langchain_groq import ChatGroq
 from langchain_community.document_loaders import PyPDFLoader
 import tempfile
 
-# ── Pydantic schemas ──────────────────────────────────────────────────────────
+# Pydantic schemas 
 
 class Education(BaseModel):
     """Educational qualification"""
@@ -47,7 +47,7 @@ class JDRequirements(BaseModel):
     responsibilities: Optional[List[str]] = Field(description="Key job responsibilities")  # ← add Optional
     location: Optional[str] = Field(description="Job location or remote policy")
 
-# ── Parser functions ──────────────────────────────────────────────────────────
+# Parser functions 
 
 def get_llm():
     return ChatGroq(

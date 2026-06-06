@@ -33,7 +33,7 @@ app.add_middleware(
 # key = thread_id, value = intermediate state
 pending_sessions = {}
 
-# ── Response Models ───────────────────────────────────────────────────────────
+#  Response Models
 
 class IntermediateResponse(BaseModel):
     thread_id: str
@@ -61,7 +61,7 @@ class ApplicationUpdate(BaseModel):
     status: str
     notes: str = ""
 
-# ── Endpoints ─────────────────────────────────────────────────────────────────
+# Endpoints
 
 @app.get("/")
 def root():
