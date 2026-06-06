@@ -258,3 +258,12 @@ def delete_application(application_id: int, db: Session = Depends(get_db)):
     db.delete(application)
     db.commit()
     return {"message": "Deleted successfully"}
+
+
+@app.get("/debug-tracing")
+def debug_tracing():
+    return {
+        "tracing": os.getenv("LANGCHAIN_TRACING_V2"),
+        "project": os.getenv("LANGCHAIN_PROJECT"),
+        "key_set": bool(os.getenv("LANGCHAIN_API_KEY"))
+    }
