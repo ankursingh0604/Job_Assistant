@@ -72,7 +72,7 @@ Resume PDF + Job Description
 - **LangGraph agent** — multi-node pipeline where each step builds context for the next
 - **Human in the Loop** — agent pauses mid-execution using `interrupt_before`, waits for your input, then resumes with your guidance injected into the state
 - **Extraction over plain prompting** — uses structured Pydantic schemas to parse resumes, not just free-form text
-- **Company research** — agent searches the web so cover letters reference real company context
+- **Company research** — agent searches the web so cover letters reference real company context.
 - **Production ready** — FastAPI backend, Railway deployment, application tracker with full CRUD.
 
 ---
